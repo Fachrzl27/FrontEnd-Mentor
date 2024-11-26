@@ -11,7 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Recipe page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,21 +29,56 @@
         color: hsl(228, 45%, 44%);
       }
 
-      h2,
-      h3 {
+      body {
+        padding: 10%;
+        background-color: hsl(30, 54%, 90%);
+        font-family: "Young", serif;
+        line-height: 1.5;
+      }
+
+      .content {
+        background-color: hsl(0, 0%, 100%);
+        padding: 30px;
+        width: auto;
+        height: auto;
+        border-radius: 25px;
+      }
+
+      img {
+        display: flex;
+        width: 100%;
+        border-radius: 15px;
+      }
+
+      .preparation {
+        background-color: hsl(330, 100%, 98%);
+        padding: 10px;
+      }
+
+      #brown {
         color: hsl(14, 45%, 36%);
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        padding-left: 10px;
+      }
+
+      ol {
+        padding-left: 20px;
       }
     </style>
   </head>
-  <body style="background-color: hsl(330, 100%, 98%)">
-    <div style="background-color: hsl(0, 0%, 100%); margin: 10px">
-      <div>
-        <img
-          src="../recipe-page-main/assets/images/image-omelette.jpeg"
-          alt="omelette"
-          style="width: 800px"
-        />
-      </div>
+  <body>
+    <div class="content">
+      <img
+        src="../recipe-page-main/assets/images/image-omelette.jpeg"
+        alt="omelette"
+        ;
+      />
 
       <h1>Simple Omelette Recipe</h1>
 
@@ -48,60 +88,64 @@
         choice of cheese, vegetables, or meats.
       </p>
 
-      <div style="background-color: hsl(330, 100%, 98%); padding: 5px">
-        <h3>Preparation time</h3>
+      <div class="preparation">
+        <h3 id="brown">Preparation time</h3>
         <ul>
-          <li><b>Total:</b>Approximately 10 minutes</li>
-          <li><b>Preparation:</b>5 minutes</li>
-          <li><b>Cooking</b>T5 minutes</li>
+          <li><b>Total:</b> Approximately 10 minutes</li>
+          <li><b>Preparation:</b> 5 minutes</li>
+          <li><b>Cooking:</b> 5 minutes</li>
         </ul>
       </div>
 
-      <h2>Ingredients</h2>
-      <ul>
-        <li>2-3 large eggs</li>
-        <li>Salt, to taste</li>
-        <li>Salt, to taste</li>
-        <li>Pepper, to taste</li>
-        <li>1 tablespoon of butter or oil</li>
-        <li>
-          Optional fillings: cheese, diced vegetables, cooked meats, herbs
-        </li>
-      </ul>
+      <div class="list">
+        <h2 id="brown">Ingredients</h2>
+        <ul>
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>
+            Optional fillings: cheese, diced vegetables, cooked meats, herbs
+          </li>
+        </ul>
+      </div>
 
       <hr />
 
-      <h2>Instructions</h2>
+      <h2 id="brown">Instructions</h2>
       <ol>
         <li>
-          Beat the eggs: In a bowl, beat the eggs with a pinch of salt and
-          pepper until they are well mixed. You can add a tablespoon of water or
-          milk for a fluffier texture.
+          <b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt
+          and pepper until they are well mixed. You can add a tablespoon of
+          water or milk for a fluffier texture.
         </li>
         <li>
-          Heat the pan: Place a non-stick frying pan over medium heat and add
-          butter or oil
+          <b>Heat the pan:</b> Place a non-stick frying pan over medium heat and
+          add butter or oil
         </li>
         <li>
-          Cook the omelette: Once the butter is melted and bubbling, pour in the
-          eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+          <b>Cook the omelette:</b> Once the butter is melted and bubbling, pour
+          in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
         </li>
         <li>
-          Add fillings (optional): When the eggs begin to set at the edges but
-          are still slightly runny in the middle, sprinkle your chosen fillings
-          over one half of the omelette.
+          <b>Add fillings (optional):</b> When the eggs begin to set at the
+          edges but are still slightly runny in the middle, sprinkle your chosen
+          fillings over one half of the omelette.
         </li>
         <li>
-          Fold and serve: As the omelette continues to cook, carefully lift one
-          edge and fold it over the fillings. Let it cook for another minute,
-          then slide it onto a plate.
+          <b>Fold and serve:</b> As the omelette continues to cook, carefully
+          lift one edge and fold it over the fillings. Let it cook for another
+          minute, then slide it onto a plate.
         </li>
-        <li>Enjoy: Serve hot, with additional salt and pepper if needed.</li>
+        <li>
+          <b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.
+        </li>
       </ol>
 
       <hr />
 
-      <h2>Nutrition</h2>
+      <h2 id="brown">Nutrition</h2>
       <p>
         The table below shows nutritional values per serving without the
         additional fillings.
@@ -109,19 +153,19 @@
       <table>
         <tr>
           <td>Calories</td>
-          <td>277kcal</td>
+          <td id="brown"><b>277kcal</b></td>
         </tr>
         <tr>
           <td>Carbs</td>
-          <td>0g</td>
+          <td id="brown"><b>0g</b></td>
         </tr>
         <tr>
           <td>Protein</td>
-          <td>20g</td>
+          <td id="brown"><b>20g</b></td>
         </tr>
         <tr>
           <td>Fat</td>
-          <td>22g</td>
+          <td id="brown"><b>22g</b></td>
         </tr>
       </table>
 
@@ -130,7 +174,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">WJ Project</a>.
       </div>
     </div>
   </body>
